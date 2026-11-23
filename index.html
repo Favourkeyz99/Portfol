@@ -114,7 +114,18 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
  .now li+li{border-top:1px solid var(--rule)}
  section{padding:72px 0}
 }
-@media (max-width:640px){nav{display:none}.right{gap:0}}
+@media (max-width:640px){nav{display:none}.right{gap:0}
+ .hero{grid-template-columns:minmax(0,1fr) 36%;gap:18px;padding:32px 24px 56px;align-items:center}
+ .photo{order:0;width:100%;margin-left:0;justify-self:end}
+ .photo::before{inset:8px -8px -8px 8px}
+ .photo::after,.badge{display:none}
+ .frame{font-size:44px}
+ .tag{font-size:12px;padding:5px 10px}
+ h1{font-size:clamp(24px,7.6vw,34px);margin:14px 0 10px}
+ .lead{font-size:14px;margin:0 0 16px}
+ .btns{gap:8px}
+ .btn{min-height:42px;padding:0 16px;font-size:14px}
+}
 
 .btn.main{box-shadow:4px 4px 0 var(--ink)}
 .btn.main:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
@@ -231,7 +242,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     </div>
     <div class="pn" role="tabpanel" id="p1" aria-labelledby="t1">
      <p>I started in science and found my way to design. Biochemistry taught me to ask questions, test ideas and explain hard things step by step. I now use the same habits to design products that people can use without a manual.</p>
-     <p>I work in Figma and I enjoy research and writing, so I can design the screens and also explain the thinking behind them in a clear case study. Outside design, I play the keyboard.</p>
+     <p>I work in Figma and I enjoy research and writing, so I can design the screens and also explain the thinking behind them in a clear case study.</p>
     </div>
     <div class="pn" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
      <h3>Design</h3><ul class="chips"><li>Figma</li><li>UI/UX design</li><li>App and website design</li><li>Sign-up and onboarding flows</li></ul>
